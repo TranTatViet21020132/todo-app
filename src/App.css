@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primaryPurple: #646ff0;
+	--black-1: #646681;
+	--black-2: #585858;
+	--bg-1: #f8f8ff;
+	--bg-2: #ecedf6;
+	--bg-3: #cccdde;
+	--gray-1: #eee;
+	--gray-2: #dedfe1;
+	--black: black;
+	--white: white;
+  --transition: all 400ms ease; 
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+	background-color: var(--bg-1);
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+}
+
+.App h1 {
+  margin: 2rem 0 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--black-1);
+  display: inline-block;
+}
+
+.toolbar__container {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.toolbar__container .toolbar__input {
+  height: 3rem;
+  font-size: 1rem;
+  width: 34%;
+  margin: 0 1rem 0;
+  border: 2px solid var(--black-2);
+  border-radius: 5px;
+  color: var(--black-2);
+  box-shadow: none;
+  outline: none;
+  cursor: default;
+  padding-left: 5px;
+}
+
+.toolbar__container .toolbar__submit {
+  height: 3rem;
+  font-size: 1rem;
+  padding: 0 0.8rem;
+  margin-right: 0;
+  background: var(--primaryPurple);
+  font-weight: 700;
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.toolbar__container .toolbar__submit:hover {
+  background: var(--primaryPurple);
+  filter: brightness(80%);
+}

@@ -1,0 +1,65 @@
+.taskList__container {
+    width: 40%;
+    margin-top: 2rem;
+    border: 8px solid var(--bg-2);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    margin-left: 14px;
+}
+
+.task {
+    font-size: 15px;
+    width: 100%;
+    height: 80px;
+    border: 8px solid var(--bg-2);
+    align-items: center;
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.task__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.task__info h3, h5 {
+    color: var(--black-1);
+}
+
+.editable__container {
+    gap: 4px;
+    display: flex;
+}
+
+.completed__btn {
+    width: auto;
+    aspect-ratio: 1/1;
+    font-size: 1.2rem;
+    padding: 0 6px;
+    border-radius: 10%;
+    background: var(--gray-1);
+    border: 1px solid var(--gray-1);
+    transition: var(--transition);
+}
+
+.completed__btn:hover {
+    filter: brightness(80%);
+}
+
+.delete__btn {
+    width: auto;
+    aspect-ratio: 1/1;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    padding: 0 6px;
+    border-radius: 10%;
+    background: var(--gray-1);
+    border: 1px solid var(--gray-1);
+    transition: var(--transition);
+}
+
+.delete__btn:hover {
+    filter: brightness(80%);
+}
